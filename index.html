@@ -34,5 +34,20 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Dograh Voice Widget -->
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src =
+          'https://devagents.afterlife.org.in/embed/dograh-widget.js?token=emb_94B-DuzfcS9CmZA49zZcm7Yreo0mDZSLFAW-rmXFl-o&environment=production&apiEndpoint=https://devagents.afterlife.org.in';
+        js.async = true;
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'dograh-widget');
+    </script>
   </body>
 </html>
